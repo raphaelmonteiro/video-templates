@@ -48,7 +48,7 @@
     "studio": "remotion studio src/index.ts",
     "render:sample": "remotion render src/index.ts OfferCarousel out/sample.mp4 --props=fixtures/sample-6-offers.json",
     "still:sample": "remotion still src/index.ts OfferCarousel out/still.png --props=fixtures/sample-6-offers.json",
-    "benchmark": "remotion benchmark src/index.ts --props=fixtures/sample-6-offers.json"
+    "benchmark": "remotion benchmark src/index.ts OfferCarousel --props=fixtures/sample-6-offers.json --runs=1 --concurrencies=1,4"
   },
   "peerDependencies": {
     "react": "^18.2.0 || ^19.0.0",
