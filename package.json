@@ -1,0 +1,77 @@
+{
+  "name": "@chroma/video-templates",
+  "version": "0.1.0",
+  "compositionVersion": "0.1.0",
+  "private": true,
+  "description": "Composições Remotion do Chroma (F2 ofertas em sequência): OfferCarousel, schema de props em zod, tokens e helpers puros de layout, timing e legendas.",
+  "license": "UNLICENSED",
+  "sideEffects": false,
+  "main": "dist/cjs/lib.js",
+  "module": "dist/esm/lib.js",
+  "types": "dist/types/lib.d.ts",
+  "remotionEntry": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/lib.d.ts",
+      "import": "./dist/esm/lib.js",
+      "require": "./dist/cjs/lib.js"
+    },
+    "./core": {
+      "types": "./dist/types/core/index.d.ts",
+      "import": "./dist/esm/core/index.js",
+      "require": "./dist/cjs/core/index.js"
+    },
+    "./remotion-entry": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "typesVersions": {
+    "*": {
+      "core": [
+        "dist/types/core/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "remotion.config.ts"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.build.cjs.json && tsc -p tsconfig.build.esm.json && tsc -p tsconfig.build.types.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "fixtures": "npm run build && node scripts/make-fixtures.mjs",
+    "studio": "remotion studio src/index.ts",
+    "render:sample": "remotion render src/index.ts OfferCarousel out/sample.mp4 --props=fixtures/sample-6-offers.json",
+    "still:sample": "remotion still src/index.ts OfferCarousel out/still.png --props=fixtures/sample-6-offers.json",
+    "benchmark": "remotion benchmark src/index.ts --props=fixtures/sample-6-offers.json"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0",
+    "remotion": "4.0.529"
+  },
+  "dependencies": {
+    "@remotion/captions": "4.0.529",
+    "@remotion/fonts": "4.0.529",
+    "@remotion/layout-utils": "4.0.529",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "4.0.529",
+    "@remotion/cli": "4.0.529",
+    "@remotion/renderer": "4.0.529",
+    "@remotion/zod-types": "4.0.529",
+    "@types/node": "22.10.2",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.529",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7"
+  }
+}

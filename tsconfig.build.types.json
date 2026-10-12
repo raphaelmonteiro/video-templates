@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.build.base.json",
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "sourceMap": false,
+    "declarationMap": true,
+    "outDir": "dist/types"
+  }
+}

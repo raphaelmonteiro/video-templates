@@ -1,0 +1,500 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "character": {
+    "clips": [
+      {
+        "src": "fixtures/clips/line-1.mp4",
+        "startS": 0,
+        "endS": 2.229,
+        "lineId": "l-abertura"
+      },
+      {
+        "src": "fixtures/clips/line-2.mp4",
+        "startS": 2.429,
+        "endS": 5.538,
+        "lineId": "l-arroz"
+      },
+      {
+        "src": "fixtures/clips/line-3.mp4",
+        "startS": 5.738,
+        "endS": 9.079,
+        "lineId": "l-cafe"
+      },
+      {
+        "src": "fixtures/clips/line-4.mp4",
+        "startS": 9.279,
+        "endS": 11.866,
+        "lineId": "l-oleo"
+      },
+      {
+        "src": "fixtures/clips/line-5.mp4",
+        "startS": 12.066,
+        "endS": 14.863,
+        "lineId": "l-leite"
+      },
+      {
+        "src": "fixtures/clips/line-6.mp4",
+        "startS": 15.063,
+        "endS": 18.056,
+        "lineId": "l-picanha"
+      },
+      {
+        "src": "fixtures/clips/line-7.mp4",
+        "startS": 18.256,
+        "endS": 21.539,
+        "lineId": "l-refri"
+      },
+      {
+        "src": "fixtures/clips/line-8.mp4",
+        "startS": 21.739,
+        "endS": 23.936,
+        "lineId": "l-fechamento"
+      }
+    ],
+    "window": {
+      "x": 0.0602,
+      "y": 0.3865,
+      "w": 0.3518,
+      "h": 0.2635
+    },
+    "tileRatio": 0.75,
+    "posterUrl": "fixtures/character-poster.png",
+    "backgroundColor": "#FFE082"
+  },
+  "offers": [
+    {
+      "id": "of-arroz",
+      "name": "Arroz Branco Tipo 1 5 kg",
+      "price": "24,90",
+      "originalPrice": "29,90",
+      "badge": "OFERTA",
+      "imageUrl": "fixtures/products/arroz.png",
+      "catalogId": "cat-101"
+    },
+    {
+      "id": "of-cafe",
+      "name": "Café Torrado e Moído 500 g",
+      "price": "15,49",
+      "originalPrice": "18,99",
+      "badge": "-18%",
+      "imageUrl": "fixtures/products/cafe.png",
+      "catalogId": "cat-102"
+    },
+    {
+      "id": "of-oleo",
+      "name": "Óleo de Soja 900 ml",
+      "price": "7,99",
+      "unit": "un",
+      "imageUrl": "fixtures/products/oleo.png",
+      "catalogId": "cat-103"
+    },
+    {
+      "id": "of-leite",
+      "name": "Leite Integral 1 L",
+      "price": "4,79",
+      "originalPrice": "5,49",
+      "badge": "LEVE 6 PAGUE 5",
+      "imageUrl": "fixtures/products/leite.png",
+      "catalogId": "cat-104"
+    },
+    {
+      "id": "of-picanha",
+      "name": "Picanha Bovina Resfriada",
+      "price": "69,90",
+      "unit": "kg",
+      "badge": "AÇOUGUE",
+      "imageUrl": "fixtures/products/picanha.png",
+      "catalogId": null
+    },
+    {
+      "id": "of-refri",
+      "name": "Refrigerante de Cola 2 L",
+      "price": "8,99",
+      "originalPrice": "10,49",
+      "imageUrl": "fixtures/products/refri.png",
+      "catalogId": "cat-106"
+    }
+  ],
+  "lines": [
+    {
+      "id": "l-abertura",
+      "kind": "opening",
+      "startS": 0,
+      "endS": 2.229,
+      "words": [
+        {
+          "text": "Chegaram",
+          "startS": 0.06,
+          "endS": 0.569
+        },
+        {
+          "text": "as",
+          "startS": 0.604,
+          "endS": 0.765
+        },
+        {
+          "text": "ofertas",
+          "startS": 0.8,
+          "endS": 1.251
+        },
+        {
+          "text": "do",
+          "startS": 1.286,
+          "endS": 1.447
+        },
+        {
+          "text": "Bom",
+          "startS": 1.482,
+          "endS": 1.701
+        },
+        {
+          "text": "Preço!",
+          "startS": 1.736,
+          "endS": 2.129
+        }
+      ]
+    },
+    {
+      "id": "l-arroz",
+      "kind": "offer",
+      "offerId": "of-arroz",
+      "startS": 2.429,
+      "endS": 5.538,
+      "words": [
+        {
+          "text": "Arroz",
+          "startS": 2.489,
+          "endS": 2.824
+        },
+        {
+          "text": "cinco",
+          "startS": 2.859,
+          "endS": 3.194
+        },
+        {
+          "text": "quilos,",
+          "startS": 3.229,
+          "endS": 3.68
+        },
+        {
+          "text": "vinte",
+          "startS": 3.855,
+          "endS": 4.19
+        },
+        {
+          "text": "e",
+          "startS": 4.225,
+          "endS": 4.328
+        },
+        {
+          "text": "quatro",
+          "startS": 4.363,
+          "endS": 4.756
+        },
+        {
+          "text": "e",
+          "startS": 4.791,
+          "endS": 4.894
+        },
+        {
+          "text": "noventa!",
+          "startS": 4.929,
+          "endS": 5.438
+        }
+      ]
+    },
+    {
+      "id": "l-cafe",
+      "kind": "offer",
+      "offerId": "of-cafe",
+      "startS": 5.738,
+      "endS": 9.079,
+      "words": [
+        {
+          "text": "Café",
+          "startS": 5.798,
+          "endS": 6.075
+        },
+        {
+          "text": "quinhentos",
+          "startS": 6.11,
+          "endS": 6.735
+        },
+        {
+          "text": "gramas,",
+          "startS": 6.77,
+          "endS": 7.221
+        },
+        {
+          "text": "quinze",
+          "startS": 7.396,
+          "endS": 7.789
+        },
+        {
+          "text": "e",
+          "startS": 7.824,
+          "endS": 7.927
+        },
+        {
+          "text": "quarenta",
+          "startS": 7.962,
+          "endS": 8.471
+        },
+        {
+          "text": "e",
+          "startS": 8.506,
+          "endS": 8.609
+        },
+        {
+          "text": "nove!",
+          "startS": 8.644,
+          "endS": 8.979
+        }
+      ]
+    },
+    {
+      "id": "l-oleo",
+      "kind": "offer",
+      "offerId": "of-oleo",
+      "startS": 9.279,
+      "endS": 11.866,
+      "words": [
+        {
+          "text": "Óleo",
+          "startS": 9.339,
+          "endS": 9.616
+        },
+        {
+          "text": "de",
+          "startS": 9.651,
+          "endS": 9.812
+        },
+        {
+          "text": "soja,",
+          "startS": 9.847,
+          "endS": 10.182
+        },
+        {
+          "text": "sete",
+          "startS": 10.357,
+          "endS": 10.634
+        },
+        {
+          "text": "e",
+          "startS": 10.669,
+          "endS": 10.772
+        },
+        {
+          "text": "noventa",
+          "startS": 10.807,
+          "endS": 11.258
+        },
+        {
+          "text": "e",
+          "startS": 11.293,
+          "endS": 11.396
+        },
+        {
+          "text": "nove!",
+          "startS": 11.431,
+          "endS": 11.766
+        }
+      ]
+    },
+    {
+      "id": "l-leite",
+      "kind": "offer",
+      "offerId": "of-leite",
+      "startS": 12.066,
+      "endS": 14.863,
+      "words": [
+        {
+          "text": "Leite",
+          "startS": 12.126,
+          "endS": 12.461
+        },
+        {
+          "text": "integral,",
+          "startS": 12.496,
+          "endS": 13.063
+        },
+        {
+          "text": "quatro",
+          "startS": 13.238,
+          "endS": 13.631
+        },
+        {
+          "text": "e",
+          "startS": 13.666,
+          "endS": 13.769
+        },
+        {
+          "text": "setenta",
+          "startS": 13.804,
+          "endS": 14.255
+        },
+        {
+          "text": "e",
+          "startS": 14.29,
+          "endS": 14.393
+        },
+        {
+          "text": "nove!",
+          "startS": 14.428,
+          "endS": 14.763
+        }
+      ]
+    },
+    {
+      "id": "l-picanha",
+      "kind": "offer",
+      "offerId": "of-picanha",
+      "startS": 15.063,
+      "endS": 18.056,
+      "words": [
+        {
+          "text": "Picanha,",
+          "startS": 15.123,
+          "endS": 15.632
+        },
+        {
+          "text": "sessenta",
+          "startS": 15.807,
+          "endS": 16.316
+        },
+        {
+          "text": "e",
+          "startS": 16.351,
+          "endS": 16.454
+        },
+        {
+          "text": "nove",
+          "startS": 16.489,
+          "endS": 16.766
+        },
+        {
+          "text": "e",
+          "startS": 16.801,
+          "endS": 16.904
+        },
+        {
+          "text": "noventa",
+          "startS": 16.939,
+          "endS": 17.39
+        },
+        {
+          "text": "o",
+          "startS": 17.425,
+          "endS": 17.528
+        },
+        {
+          "text": "quilo!",
+          "startS": 17.563,
+          "endS": 17.956
+        }
+      ]
+    },
+    {
+      "id": "l-refri",
+      "kind": "offer",
+      "offerId": "of-refri",
+      "startS": 18.256,
+      "endS": 21.539,
+      "words": [
+        {
+          "text": "Refrigerante",
+          "startS": 18.316,
+          "endS": 19.057
+        },
+        {
+          "text": "dois",
+          "startS": 19.092,
+          "endS": 19.369
+        },
+        {
+          "text": "litros,",
+          "startS": 19.404,
+          "endS": 19.855
+        },
+        {
+          "text": "oito",
+          "startS": 20.03,
+          "endS": 20.307
+        },
+        {
+          "text": "e",
+          "startS": 20.342,
+          "endS": 20.445
+        },
+        {
+          "text": "noventa",
+          "startS": 20.48,
+          "endS": 20.931
+        },
+        {
+          "text": "e",
+          "startS": 20.966,
+          "endS": 21.069
+        },
+        {
+          "text": "nove!",
+          "startS": 21.104,
+          "endS": 21.439
+        }
+      ]
+    },
+    {
+      "id": "l-fechamento",
+      "kind": "closing",
+      "startS": 21.739,
+      "endS": 23.936,
+      "words": [
+        {
+          "text": "Só",
+          "startS": 21.799,
+          "endS": 21.96
+        },
+        {
+          "text": "até",
+          "startS": 21.995,
+          "endS": 22.214
+        },
+        {
+          "text": "domingo.",
+          "startS": 22.249,
+          "endS": 22.758
+        },
+        {
+          "text": "Te",
+          "startS": 22.993,
+          "endS": 23.154
+        },
+        {
+          "text": "espero",
+          "startS": 23.189,
+          "endS": 23.582
+        },
+        {
+          "text": "lá!",
+          "startS": 23.617,
+          "endS": 23.836
+        }
+      ]
+    }
+  ],
+  "brand": {
+    "logoUrl": "fixtures/logo.png",
+    "name": "Supermercado Bom Preço",
+    "primaryColor": "#C62828",
+    "secondaryColor": "#FFD600",
+    "fontFamily": "DejaVu Sans"
+  },
+  "layoutPreset": "character_left",
+  "captions": true,
+  "music": {
+    "src": "fixtures/music-loop.wav",
+    "volume": 0.35
+  }
+}

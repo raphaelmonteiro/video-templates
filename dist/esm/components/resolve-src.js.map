@@ -1,0 +1,1 @@
+{"version":3,"file":"resolve-src.js","sourceRoot":"","sources":["../../../src/components/resolve-src.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,UAAU,CAAC;AACtC,OAAO,EAAE,kBAAkB,EAAE,MAAM,gBAAgB,CAAC;AAEpD,+FAA+F;AAC/F,MAAM,UAAU,eAAe,CAAC,GAAW;IACzC,OAAO,kBAAkB,CAAC,GAAG,CAAC,CAAC,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC,UAAU,CAAC,GAAG,CAAC,CAAC;AACzD,CAAC"}
