@@ -7,6 +7,6 @@
     "rootDir": "src",
     "types": []
   },
-  "files": ["src/lib.ts", "src/core/index.ts"],
+  "files": ["src/lib.ts", "src/core/index.ts", "src/piece.ts"],
   "include": []
 }

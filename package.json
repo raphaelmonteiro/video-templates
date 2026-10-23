@@ -1,9 +1,9 @@
 {
   "name": "@chroma/video-templates",
-  "version": "0.1.0",
-  "compositionVersion": "0.1.0",
+  "version": "0.2.0",
+  "compositionVersion": "0.2.0",
   "private": true,
-  "description": "Composições Remotion do Chroma (F2 ofertas em sequência): OfferCarousel, schema de props em zod, tokens e helpers puros de layout, timing e legendas.",
+  "description": "Composições Remotion do Chroma: OfferCarousel (F2 ofertas em sequência) e OfferPieceStill (peça de ofertas), schema de props em zod, tokens e helpers puros de layout, timing e legendas; PieceCanvas compartilhado com o editor.",
   "license": "UNLICENSED",
   "sideEffects": false,
   "main": "dist/cjs/lib.js",
@@ -21,6 +21,12 @@
       "import": "./dist/esm/core/index.js",
       "require": "./dist/cjs/core/index.js"
     },
+    "./piece": {
+      "types": "./dist/types/piece.d.ts",
+      "import": "./dist/esm/piece.js",
+      "require": "./dist/cjs/piece.js"
+    },
+    "./fixtures/*.json": "./fixtures/*.json",
     "./remotion-entry": "./src/index.ts",
     "./package.json": "./package.json"
   },
@@ -28,6 +34,9 @@
     "*": {
       "core": [
         "dist/types/core/index.d.ts"
+      ],
+      "piece": [
+        "dist/types/piece.d.ts"
       ]
     }
   },
@@ -35,6 +44,7 @@
     "dist",
     "src",
     "fixtures/sample-6-offers.json",
+    "fixtures/piece-9x16.json",
     "remotion.config.ts"
   ],
   "engines": {
@@ -48,6 +58,7 @@
     "studio": "remotion studio src/index.ts",
     "render:sample": "remotion render src/index.ts OfferCarousel out/sample.mp4 --props=fixtures/sample-6-offers.json",
     "still:sample": "remotion still src/index.ts OfferCarousel out/still.png --props=fixtures/sample-6-offers.json",
+    "still:piece": "remotion still src/index.ts OfferPieceStill out/piece.png --props=fixtures/piece-9x16.json",
     "benchmark": "remotion benchmark src/index.ts OfferCarousel --props=fixtures/sample-6-offers.json --runs=1 --concurrencies=1,4"
   },
   "peerDependencies": {

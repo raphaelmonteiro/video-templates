@@ -1,0 +1,126 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "fonts": [],
+  "document": {
+    "schemaVersion": 1,
+    "aspectRatio": "9:16",
+    "background": { "mode": "gradient", "colors": ["#C62828", "#7F0000"], "angle": 160 },
+    "fonts": [],
+    "blocks": [
+      {
+        "id": "logo",
+        "type": "logo",
+        "rect": { "x": 0.05, "y": 0.03, "w": 0.34, "h": 0.1 },
+        "zIndex": 3,
+        "imageUrl": "fixtures/logo.png"
+      },
+      {
+        "id": "text-title",
+        "type": "text",
+        "rect": { "x": 0.42, "y": 0.045, "w": 0.53, "h": 0.08 },
+        "zIndex": 3,
+        "text": "OFERTAS DA SEMANA",
+        "fontFamily": null,
+        "fontSize": 0.055,
+        "color": "#FFD600",
+        "align": "right",
+        "weight": "bold"
+      },
+      {
+        "id": "products",
+        "type": "products",
+        "rect": { "x": 0.05, "y": 0.16, "w": 0.9, "h": 0.5 },
+        "zIndex": 1,
+        "mode": "grid",
+        "layout": "auto",
+        "areaStyle": { "background": "#FFFFFF", "radius": 0.03, "shadow": true },
+        "tagStyle": { "kind": "badge", "color": "#C62828", "textColor": "#FFFFFF" },
+        "items": [
+          {
+            "id": "it-picanha",
+            "catalogId": "cat-105",
+            "name": "Picanha Bovina Resfriada",
+            "price": "69,90",
+            "unit": "kg",
+            "imageUrl": "fixtures/products/picanha.png",
+            "featured": true,
+            "spoken": true
+          },
+          {
+            "id": "it-arroz",
+            "catalogId": "cat-101",
+            "name": "Arroz Branco Tipo 1",
+            "grams": "5 kg",
+            "price": "24,90",
+            "originalPrice": "29,90",
+            "imageUrl": "fixtures/products/arroz.png",
+            "spoken": true
+          },
+          {
+            "id": "it-cafe",
+            "catalogId": "cat-102",
+            "name": "Café Torrado e Moído",
+            "grams": "500 g",
+            "price": "15,49",
+            "originalPrice": "18,99",
+            "imageUrl": "fixtures/products/cafe.png",
+            "spoken": true
+          },
+          {
+            "id": "it-leite",
+            "catalogId": "cat-104",
+            "name": "Leite Integral",
+            "grams": "1 L",
+            "price": "4,79",
+            "originalPrice": "5,49",
+            "unit": "un",
+            "imageUrl": "fixtures/products/leite.png",
+            "spoken": false
+          },
+          {
+            "id": "it-oleo",
+            "catalogId": "cat-103",
+            "name": "Óleo de Soja",
+            "grams": "900 ml",
+            "price": "7,99",
+            "imageUrl": "fixtures/products/oleo.png",
+            "spoken": false
+          },
+          {
+            "id": "it-refri",
+            "catalogId": "cat-106",
+            "name": "Refrigerante de Cola",
+            "grams": "2 L",
+            "price": "8,99",
+            "originalPrice": "10,49",
+            "imageUrl": "fixtures/products/refri.png",
+            "spoken": true
+          }
+        ]
+      },
+      {
+        "id": "character",
+        "type": "character",
+        "rect": { "x": 0.56, "y": 0.68, "w": 0.39, "h": 0.22 },
+        "zIndex": 4,
+        "kitId": "kit-fixture",
+        "mode": "in_piece",
+        "panel": { "shape": "card", "color": "#FFE082" }
+      },
+      {
+        "id": "footer",
+        "type": "footer",
+        "rect": { "x": 0, "y": 0.92, "w": 1, "h": 0.08 },
+        "zIndex": 2,
+        "style": "bar",
+        "address": "Av. Brasil, 1000 · Centro",
+        "phone": "(11) 4002-8922",
+        "validity": { "from": "2026-10-20", "to": "2026-10-26" },
+        "legal": "ou enquanto durarem os estoques",
+        "backgroundColor": "#111827",
+        "textColor": "#FFFFFF"
+      }
+    ]
+  }
+}

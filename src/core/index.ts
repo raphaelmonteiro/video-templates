@@ -14,3 +14,4 @@ export * from './validate-layout';
 export * from './timing';
 export * from './captions';
 export * from './assets';
+export * from './piece/index';

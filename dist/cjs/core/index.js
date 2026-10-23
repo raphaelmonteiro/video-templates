@@ -30,4 +30,5 @@ __exportStar(require("./validate-layout"), exports);
 __exportStar(require("./timing"), exports);
 __exportStar(require("./captions"), exports);
 __exportStar(require("./assets"), exports);
+__exportStar(require("./piece/index"), exports);
 //# sourceMappingURL=index.js.map

@@ -1,11 +1,21 @@
 /** Id da composição registrada no Root (o worker passa este id ao `selectComposition`). */
 export declare const OFFER_CAROUSEL_COMPOSITION_ID = "OfferCarousel";
+/** Quadro parado da peça de ofertas (change video-peca-configuravel) — `renderStill` no worker. */
+export declare const OFFER_PIECE_STILL_COMPOSITION_ID = "OfferPieceStill";
 /**
  * Versão da COMPOSIÇÃO (semver), espelhada em `package.json#compositionVersion`
  * (um teste garante a igualdade). Entra no hash determinístico do render do
  * backend (spec video-composition-render "Render determinístico") e no
  * preflight, que compara a versão do bundle do worker com a do frontend (D3b).
  * Mude-a sempre que uma alteração puder mudar pixels ou áudio do resultado.
+ *
+ * 0.2.0 — composição `OfferPieceStill` (peça de ofertas) ao lado do OfferCarousel.
  */
-export declare const COMPOSITION_VERSION = "0.1.0";
+export declare const COMPOSITION_VERSION = "0.2.0";
+/**
+ * Qual composição as input props do render pedem: as props da peça trazem
+ * `document.blocks`; as do carrossel, `offers[]`. `null` = indeterminado
+ * (Studio sem input props) — a raiz registra todas.
+ */
+export declare function compositionIdForInputProps(input: Record<string, unknown> | null | undefined): string | null;
 //# sourceMappingURL=version.d.ts.map
